@@ -50,4 +50,6 @@ remove(id: string) {
     this.findOne(id); // lanza excepción si no existe
     this.brands = this.brands.filter(brand => brand.id !== id);
 }
-}
+    fillCarsWithSeedData(brands: Brand[]){
+        this.brands=brands
+}}

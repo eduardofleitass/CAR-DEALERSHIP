@@ -3,6 +3,8 @@ import {v4 as uuid} from 'uuid'
 import { CreateBrandDto } from './dto/create-brand.dto';
 import { UpdateBrandDto } from './dto/update-brand.dto';
 import { Brand } from './entities/brand.entity';
+import { CarsService } from '../cars/cars.service';
+import { CARS_SEED } from '../seed/data/cars.seed';
 
 @Injectable()
 export class BrandsService {
